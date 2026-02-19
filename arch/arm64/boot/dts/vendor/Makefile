@@ -1,9 +1,9 @@
 vendor := $(srctree)/$(src)
 
-ifneq "$(wildcard $(vendor)/oplus)" ""
-	subdir-y += oplus
-else
 ifneq "$(wildcard $(vendor)/qcom)" ""
 	subdir-y += qcom
 endif
-endif
+
+# GT NEO 3T
+subdir-y += 21623
+subdir-y += 21733
